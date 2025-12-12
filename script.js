@@ -81,15 +81,15 @@ const restartButton = createElementStyle(
 );
 
 // Adding snow
-// for (let i = 0; i <= 30; i++) {
-//   createElementStyle(
-//     "i",
-//     `font-size: ${3 * Math.random()}em;left: ${
-//       100 * Math.random()
-//     }%; animation-delay: ${10 * Math.random()}s, ${2 * Math.random()}s`,
-//     "."
-//   );
-// }
+for (let i = 0; i <= 30; i++) {
+  createElementStyle(
+    "i",
+    `font-size: ${3 * Math.random()}em;left: ${
+      100 * Math.random()
+    }%; animation-delay: ${10 * Math.random()}s, ${2 * Math.random()}s`,
+    "."
+  );
+}
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -539,7 +539,6 @@ function drawTree(x, color) {
   const treeCrownHeight = 60;
   const treeCrownWidth = 30;
 
-  // Draw trunk
   ctx.fillStyle = colours.darkHill;
   ctx.fillRect(
     -treeTrunkWidth / 2,
@@ -548,7 +547,6 @@ function drawTree(x, color) {
     treeTrunkHeight
   );
 
-  // Draw crown
   ctx.beginPath();
 
   ctx.moveTo(-treeCrownWidth / 2, -treeTrunkHeight * 3);
