@@ -344,13 +344,13 @@ function thePlatformTheStickHits() {
   if (
     platformTheStickHits &&
     platformTheStickHits.x +
-      platformTheStickHits.w / 2 -
-      config.perfectAreaSize / 2 <
-      stickFarX &&
+    platformTheStickHits.w / 2 -
+    config.perfectAreaSize / 2 <
+    stickFarX &&
     stickFarX <
-      platformTheStickHits.x +
-        platformTheStickHits.w / 2 +
-        config.perfectAreaSize / 2
+    platformTheStickHits.x +
+    platformTheStickHits.w / 2 +
+    config.perfectAreaSize / 2
   )
     return [platformTheStickHits, true];
 
@@ -422,9 +422,9 @@ function drawSanta() {
   ctx.translate(
     santaX - config.santaWidth / 2,
     santaY +
-      config.canvasHeight -
-      config.platformHeight -
-      config.santaHeight / 2
+    config.canvasHeight -
+    config.platformHeight -
+    config.santaHeight / 2
   );
 
   ctx.fillRect(
@@ -446,7 +446,7 @@ function drawSanta() {
   ctx.fillStyle = colours.skin;
   ctx.arc(5, -7, 3, 0, Math.PI * 2, false);
   ctx.fill();
-  
+
   ctx.beginPath();
   ctx.fillStyle = "white";
   ctx.arc(7, -2, 3, 0, Math.PI * 2, false);
@@ -628,7 +628,7 @@ function getHillY(windowX, baseHeight, amplitude, stretch) {
     Math.sinus(
       (sceneOffset * config.backgroundSpeedMultiplier + windowX) * stretch
     ) *
-      amplitude +
+    amplitude +
     sineBaseY
   );
 }
